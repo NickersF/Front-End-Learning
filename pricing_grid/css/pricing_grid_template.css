@@ -1,0 +1,58 @@
+/* 
+Author: Nicholas Fazzolari
+
+Core CSS file that defines the main rules for the pricing grid template
+
+*/
+/* 
+Author: Nicholas Fazzolari
+
+Colors for the pricing grid. Material color codes.
+*/
+/* 
+Author: Nicholas Fazzolari
+
+Font-stack from Adobe Type web kits. See link tag in header
+of main HTML for the CSS file location.
+*/
+.nimbus-sans-light {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+
+.nimbus-sans-regular {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.nimbus-sans-bold {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+.nimbus-sans-bold-cond {
+  font-family: nimbus-sans-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
+
+.product-option-header {
+  display: flex;
+  justify-content: center;
+  background-color: #1E88E5;
+  width: 448px; }
+
+.header-text {
+  color: #ECEFF1; }
+
+.product-option-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ECEFF1;
+  width: 448px; }
+
+/*# sourceMappingURL=pricing_grid_template.css.map */

@@ -1,0 +1,32 @@
+/* 
+Author: Nicholas Fazzolari
+
+Font-stack from Adobe Type web kits. See link tag in header
+of main HTML for the CSS file location.
+*/ 
+
+// From the Nimbus Sans Base family
+.nimbus-sans-light {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;    
+}
+
+.nimbus-sans-regular {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nimbus-sans-bold {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+// From the Nimbus Sans Condensed family
+.nimbus-sans-bold-cond {
+    font-family: nimbus-sans-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,0 +1,17 @@
+/* 
+Author: Nicholas Fazzolari
+
+Core CSS file that defines the main rules for the pricing grid template
+
+*/
+@import '_colors';
+@import '_font_stack';
+
+body {
+    background-color: $blue-grey-600;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}

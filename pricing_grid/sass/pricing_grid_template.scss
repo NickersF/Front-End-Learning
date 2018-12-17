@@ -1,0 +1,32 @@
+/* 
+Author: Nicholas Fazzolari
+
+Core CSS file that defines the main rules for the pricing grid template
+
+*/
+@import '_colors';
+@import '_font_stack';
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-option-header {
+    display: flex;
+    justify-content: center;
+    background-color: $blue-600;
+    width: 448px;
+}
+
+.header-text {
+    color: $blue-grey-50
+}
+
+.product-option-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $blue-grey-50;
+    width: 448px;
+}
