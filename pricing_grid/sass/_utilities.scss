@@ -2,6 +2,23 @@
 Author: Nicholas Fazzolari
 
 Sizing and spacing rules that can be used across a
-variety of elements.
+variety of elements and projects.
 */
 
+/* 
+Develop conditionals to determine if an argument is 0
+then exlude a given radius rule. 
+*/
+@mixin setIndividualRadius($topLeft, $topRight, $bottomLeft, $bottomRight) {
+    border-top-left-radius: $topLeft;
+    border-top-right-radius: $topRight;
+    border-bottom-left-radius: $bottomLeft;
+    border-bottom-right-radius: $bottomRight;
+}
+
+@mixin setIndividualMargins($left, $top, $bottom, $right) {
+    margin-left: $left;
+    margin-top: $top;
+    margin-bottom: $bottom;
+    margin-right: $right;
+}

@@ -4,8 +4,10 @@ Author: Nicholas Fazzolari
 Core CSS file that defines the main rules for the pricing grid template
 
 */
+
 @import '_colors';
 @import '_font_stack';
+@import '_utilities';
 
 .container {
     display: flex;
@@ -15,18 +17,18 @@ Core CSS file that defines the main rules for the pricing grid template
 .product-option-header {
     display: flex;
     justify-content: center;
-    background-color: $blue-600;
     width: 448px;
-}
-
-.header-text {
-    color: $blue-grey-50
+    @include setIndividualRadius(8px, 8px, 0px, 0px);
+    background-color: $blue-600;
+    color: $blue-grey-50;
 }
 
 .product-option-body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $blue-grey-50;
     width: 448px;
+    @include setIndividualRadius(0px, 0px, 8px, 8px);
+    background-color: $blue-grey-50;
+    color: $blue-grey-600;
 }

@@ -35,6 +35,16 @@ of main HTML for the CSS file location.
   font-weight: 700;
   font-style: normal; }
 
+/* 
+Author: Nicholas Fazzolari
+
+Sizing and spacing rules that can be used across a
+variety of elements and projects.
+*/
+/* 
+Develop conditionals to determine if an argument is 0
+then exlude a given radius rule. 
+*/
 .container {
   display: flex;
   flex-direction: column; }
@@ -42,17 +52,24 @@ of main HTML for the CSS file location.
 .product-option-header {
   display: flex;
   justify-content: center;
+  width: 448px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   background-color: #1E88E5;
-  width: 448px; }
-
-.header-text {
   color: #ECEFF1; }
 
 .product-option-body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 448px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   background-color: #ECEFF1;
-  width: 448px; }
+  color: #263238; }
 
 /*# sourceMappingURL=pricing_grid_template.css.map */
