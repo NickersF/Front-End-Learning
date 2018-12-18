@@ -5,11 +5,10 @@ Sizing and spacing rules that can be used across a
 variety of elements and projects.
 */
 
-/* 
-Develop conditionals to determine if an argument is 0
-then exlude a given radius rule. 
-*/
-@mixin setIndividualRadius($topLeft, $topRight, $bottomLeft, $bottomRight) {
+// Use 'null' for the arguments you don't need instead of 0 to get cleaner output
+
+// General mixin to set all border radii
+@mixin setIndividualBorderRadius($topLeft, $topRight, $bottomLeft, $bottomRight) {
     border-top-left-radius: $topLeft;
     border-top-right-radius: $topRight;
     border-bottom-left-radius: $bottomLeft;
@@ -21,4 +20,11 @@ then exlude a given radius rule.
     margin-top: $top;
     margin-bottom: $bottom;
     margin-right: $right;
+}
+
+@mixin setIndividualPaddings($left, $top, $bottom, $right) {
+    padding-left: $left;
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-right: $right;
 }

@@ -9,6 +9,7 @@ Core CSS file that defines the main rules for the pricing grid template
 @import '_font_stack';
 @import '_utilities';
 
+// 
 .container {
     display: flex;
     flex-direction: column;
@@ -18,9 +19,8 @@ Core CSS file that defines the main rules for the pricing grid template
     display: flex;
     justify-content: center;
     width: 448px;
-    @include setIndividualRadius(8px, 8px, 0px, 0px,);
     background-color: $blue-600;
-    color: $blue-grey-50;
+    @include setIndividualBorderRadius(8px, 8px, null, null);
 }
 
 .product-option-body {
@@ -28,7 +28,7 @@ Core CSS file that defines the main rules for the pricing grid template
     flex-direction: column;
     align-items: center;
     width: 448px;
-    @include setIndividualRadius(0px, 0px, 8px, 8px,);
     background-color: $blue-grey-50;
     color: $blue-grey-600;
+    @include setIndividualBorderRadius(null, null, 8px, 8px);
 }
