@@ -13,6 +13,7 @@ Core CSS file that defines the main rules for the pricing grid template
 .container {
     display: flex;
     flex-direction: column;
+    float: left;
 }
 
 .product-option-header {
@@ -31,4 +32,41 @@ Core CSS file that defines the main rules for the pricing grid template
     background-color: $blue-grey-50;
     color: $blue-grey-600;
     @include setIndividualBorderRadius(null, null, 8px, 8px);
+}
+
+.product-option-header-text {
+    @include setNimbusSans(2rem, $blue-grey-50, null, 700);
+    @include setIndividualMargins(null, 1rem, 1rem, null);
+}
+
+.price-text {
+    @include setNimbusSans(4rem, $blue-grey-600, null, 700);
+    @include setIndividualMargins(null, 1rem, 1rem, null);
+}
+
+.license-option-label {
+    @include setNimbusSans(1.5rem, $blue-600, null, 700);
+}
+
+.product-details-list {
+    list-style-position: outside;
+    line-height: 2.25rem;
+    @include setIndividualPaddings(0rem, null, null, null);
+    @include setNimbusSans(1.25rem, $blue-grey-600, null, 700);
+}
+
+.product-button {
+    @include setNimbusSans(1.5rem, $blue-grey-50, $green-700, 700);
+    @include setIndividualMargins(null, null, 1.5rem, null);
+    @include setIndividualPaddings(2rem, 0.5rem, 0.5rem, 2rem);
+    @include setIndividualBorderRadius(8px, 8px, 8px, 8px);
+    border: 2px solid transparent;
+}
+
+.product-button:hover {
+    @include setNimbusSans(1.5rem, $green-700, $blue-grey-50, 700);
+    @include setIndividualMargins(null, null, 1.5rem, null);
+    @include setIndividualPaddings(2rem, 0.5rem, 0.5rem, 2rem);
+    @include setIndividualBorderRadius(8px, 8px, 8px, 8px);
+    border: 2px solid $green-700;
 }

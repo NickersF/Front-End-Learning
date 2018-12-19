@@ -6,12 +6,18 @@ Core CSS file that defines the main rules for the pricing grid template
 */
 @import '_colors';
 @import '_font_stack';
+@import '_utilities';
 
 body {
     background-color: $blue-grey-600;
 }
 
 .wrapper {
-    display: flex;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+@import 'pricing_grid_template';

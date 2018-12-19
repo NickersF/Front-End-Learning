@@ -35,6 +35,13 @@ of main HTML for the CSS file location.
   font-weight: 700;
   font-style: normal; }
 
+/* // Font mixins for Nimbus Sans Condensed family
+@mixin setNimbusSansCond($fontSize, $fontColor, $bkgColor, $fontWeight) {
+    font-family: nimbus-sans-condensed, sans-serif;
+    font-size: $fontSize; // in rem units
+    font-weight: $fontWeight; // 100 through 900, where 400 is reg, 900 bold
+    color: $fontColor;
+} */
 /* 
 Author: Nicholas Fazzolari
 
@@ -43,7 +50,8 @@ variety of elements and projects.
 */
 .container {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  float: left; }
 
 .product-option-header {
   display: flex;
@@ -62,5 +70,70 @@ variety of elements and projects.
   color: #263238;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px; }
+
+.product-option-header-text {
+  font-family: nimbus-sans, sans-serif;
+  font-size: 2rem;
+  color: #ECEFF1;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.price-text {
+  font-family: nimbus-sans, sans-serif;
+  font-size: 4rem;
+  color: #263238;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.license-option-label {
+  font-family: nimbus-sans, sans-serif;
+  font-size: 1.5rem;
+  color: #1E88E5;
+  font-weight: 700; }
+
+.product-details-list {
+  list-style-position: outside;
+  line-height: 2.25rem;
+  padding-left: 0rem;
+  font-family: nimbus-sans, sans-serif;
+  font-size: 1.25rem;
+  color: #263238;
+  font-weight: 700; }
+
+.product-button {
+  font-family: nimbus-sans, sans-serif;
+  font-size: 1.5rem;
+  color: #ECEFF1;
+  background-color: #388E3C;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 2px solid transparent; }
+
+.product-button:hover {
+  font-family: nimbus-sans, sans-serif;
+  font-size: 1.5rem;
+  color: #388E3C;
+  background-color: #ECEFF1;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 2px solid #388E3C; }
 
 /*# sourceMappingURL=pricing_grid_template.css.map */

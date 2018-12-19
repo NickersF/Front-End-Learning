@@ -34,15 +34,17 @@ of main HTML for the CSS file location.
 // Font mixins for Nimbus Sans Standard family
 @mixin setNimbusSans($fontSize, $fontColor, $bkgColor, $fontWeight) {
     font-family: nimbus-sans, sans-serif;
-    font-size: $fontSize; // in em units
-    font-weight: $fontWeight; // 100 through 900, where 400 is reg, 900 bold
+    font-size: $fontSize; // in rem units
     color: $fontColor;
+    background-color: $bkgColor;
+    font-weight: $fontWeight; // 100 through 900, where 400 is reg, 900 bold
+    
 }
 
-// Font mixins for Nimbus Sans Condensed family
+/* // Font mixins for Nimbus Sans Condensed family
 @mixin setNimbusSansCond($fontSize, $fontColor, $bkgColor, $fontWeight) {
     font-family: nimbus-sans-condensed, sans-serif;
-    font-size: $fontSize; // in em units
+    font-size: $fontSize; // in rem units
     font-weight: $fontWeight; // 100 through 900, where 400 is reg, 900 bold
     color: $fontColor;
-}
+} */
