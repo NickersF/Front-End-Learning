@@ -17,3 +17,7 @@ Use underscores "_" between file names. Since the GitHub repository name forces 
 A basic pricing grid based on the flexbox layout engine.
 * The file **pricing_grid_template.html** contains a single product option in the pricing grid. A pricing grid can have many product options.
 * The file **pricing_grid_preview.html** will show what many product options looks like in the browser.
+
+## Random Color Background Event:
+A JavaScript that attached a click event to a 100vh (view height) body element
+and generates a psuedorandom hexadecimal color before setting it to the body.
