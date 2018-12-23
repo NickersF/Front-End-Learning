@@ -1,7 +1,8 @@
 /* 
 Author: Nicholas Fazzolari
 
-A function that generates pseudorandom hexadecimal color values.
+Generates a pseudorandom hexadecimal color value and sets it to
+the background color of the body element.
 */
 
 "use strict";

@@ -21,3 +21,7 @@ A basic pricing grid based on the flexbox layout engine.
 ## Random Color Background Event:
 A JavaScript that attached a click event to a 100vh (view height) body element
 and generates a psuedorandom hexadecimal color before setting it to the body.
+
+## Dynamic Braces "{}"
+Using CSS and SVG components to create a dynamically scaling braces. The braces get bigger and smaller depending on
+the height of the content they are enclosing without distortions.
