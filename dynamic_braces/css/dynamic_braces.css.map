@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;EAIE;AAEF,UAAW;EACP,OAAO,EAAE,IAAI;;AAGjB,gBAAiB;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,MAAM,EAAE,GAAG;;AAGf,kBAAmB;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM",
+"sources": ["../sass/dynamic_braces.scss"],
+"names": [],
+"file": "dynamic_braces.css"
+}
