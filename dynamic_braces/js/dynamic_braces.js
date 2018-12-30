@@ -1,5 +1,0 @@
-/* 
-Author: Nicholas Fazzolari
-
-
-*/
