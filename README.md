@@ -1,5 +1,7 @@
 # Front-End-Learning
-A repository that contains various front-end learning projects. This serves as a space where I can keep common UI patterns and templates which I can re-use and modify in the future. 
+A repository that contains various front-end learning projects. This serves as a space where I can keep common UI patterns and templates which I can re-use and modify in the future.
+
+Many of these examples are mirrored on codepen. Links will be provided as they exist.
 
 ## Some notes on formatting:
 
