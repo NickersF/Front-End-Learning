@@ -5,10 +5,10 @@
 
 // The user class could come in handy in the future of the project?
 class User {
-    constructor(firstName, lastName, userName) {
+    constructor(firstName, lastName, email) {
         this._firstName = firstName;
         this._lastName = lastName;
-        this._userName = userName;
+        this._email = email;
     }
 
     // Getters
@@ -20,8 +20,8 @@ class User {
         return this._lastName;
     }
 
-    get userName() {
-        return this._userName;
+    get email() {
+        return this._email;
     }
 
     get formattedFullName() {
@@ -37,8 +37,8 @@ class User {
         this._lastName = newLastName;
     }
 
-    set userName(newuserName) {
-        this._userName = newuserName;
+    set email(newemail) {
+        this._email = newemail;
     }
 }
 
@@ -49,18 +49,18 @@ let someUser = new User();
 function getUserInfo() {
     someUser.firstName = document.getElementById('firstNameInput').value;
     someUser.lastName = document.getElementById('lastNameInput').value;
-    someUser.userName = document.getElementById('userNameInput').value;
+    someUser.email = document.getElementById('emailInput').value;
 }
 
 // Set the text content of the HTML of the gathered form data
 function setUserInfo() {
     let firstNameResult = document.getElementById('firstNameResult');
     let lastNameResult = document.getElementById('lastNameResult');
-    let userNameResult = document.getElementById('userNameResult');
+    let emailResult = document.getElementById('emailResult');
 
     firstNameResult.textContent = someUser.firstName;
     lastNameResult.textContent = someUser.lastName;
-    userNameResult.textContent = someUser.userName;
+    emailResult.textContent = someUser.email;
 }
 
 function handleUserInfo() {
