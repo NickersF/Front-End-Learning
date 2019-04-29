@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Marine-Coral-1-hex { color: #20303C; }
+.Marine-Coral-2-hex { color: #E57164; }
+.Marine-Coral-3-hex { color: #013D96; }
+.Marine-Coral-4-hex { color: #CE7C80; }
+.Marine-Coral-5-hex { color: #ED9C97; }
+
+/* Color Theme Swatches in RGBA */
+.Marine-Coral-1-rgba { color: rgba(31, 47, 59, 1); }
+.Marine-Coral-2-rgba { color: rgba(228, 112, 100, 1); }
+.Marine-Coral-3-rgba { color: rgba(1, 61, 149, 1); }
+.Marine-Coral-4-rgba { color: rgba(205, 124, 128, 1); }
+.Marine-Coral-5-rgba { color: rgba(237, 156, 151, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Marine-Coral-1-hsla { color: hsla(205, 30, 18, 1); }
+.Marine-Coral-2-hsla { color: hsla(6, 71, 64, 1); }
+.Marine-Coral-3-hsla { color: hsla(215, 98, 29, 1); }
+.Marine-Coral-4-hsla { color: hsla(357, 45, 64, 1); }
+.Marine-Coral-5-hsla { color: hsla(3, 70, 76, 1); }
