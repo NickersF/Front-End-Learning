@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New User Registration</title>
+</head>
+<body>
+
+    <h1>Enter your information</h1>
+
+    <form id="createUser">
+        <label for="firstNameInput">Frist Name</label>
+        <input id="firstNameInput" type="text" name="firstname" maxlength="25">
+        <label for="lastNameInput">Last Name</label>
+        <input id="lastNameInput" type="text" name="lastname" maxlength="25">
+        <label for="userNameInput">Username</label>
+        <input id="userNameInput" type="text" name="userName">
+        <button id="subButton" type="button">Submit</button>
+    </form>
+
+    <div id="userConfirmation">
+        <h2>First Name: </h2>
+        <span id="firstNameResult"></span>
+        <h2>Last Name: </h2>
+        <span id="lastNameResult"></span>
+        <h2>Username: </h2>
+        <span id="userNameResult"></span>
+    </div>
+
+    <script src="./user_registration.js"></script>
+</body>
+</html>
