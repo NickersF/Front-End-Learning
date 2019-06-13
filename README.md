@@ -25,4 +25,8 @@ A JavaScript that attached a click event to a 100vh (view height) body element
 and generates a psuedorandom hexadecimal color before setting it to the body.
 
 ## User Registration Page
-A basic user registration page with form inputs that dislay submitted information. 
+A basic user registration page with form inputs that dislay submitted information.
+
+## TODO List - Implemented Using a Vanilla Web Development Stack
+Using only pure JavaScript, HTML5 and CSS3 to create the front end of a TODO list app.
+* The directory and file structure follows that all files are in the subdirectory `/todo_vanilla`
