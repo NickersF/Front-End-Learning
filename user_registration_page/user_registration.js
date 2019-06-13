@@ -58,9 +58,9 @@ function setUserInfo() {
     let lastNameResult = document.getElementById('lastNameResult');
     let emailResult = document.getElementById('emailResult');
 
-    firstNameResult.textContent = someUser.firstName;
-    lastNameResult.textContent = someUser.lastName;
-    emailResult.textContent = someUser.email;
+    firstNameResult.innerText = someUser.firstName;
+    lastNameResult.innerText = someUser.lastName;
+    emailResult.innerText = someUser.email;
 }
 
 function handleUserInfo() {

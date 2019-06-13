@@ -18,19 +18,21 @@
             <form>
                 <div>
                     <h4>Create TODO List:</h4>
-                    <input type="text" placeholder="Enter TODO list name here" minlength="1" maxlength="128">
-                    <input type="submit">
+                    <input id="listTitle" type="text" placeholder="Enter TODO list name here" minlength="1" maxlength="128">
+                    <input id="submitListName" type="submit">
                 </div>
                 <div>
                     <h4>Create TODO List Item:</h4>
-                    <input type="text" placeholder="Enter TODO list item here" minlength="1" maxlength="128">
-                    <input type="submit">
+                    <input id="listItem" type="text" placeholder="Enter TODO list item here" minlength="1" maxlength="128">
+                    <input id="submitListItem" type="submit">
                 </div>
             </form>
         </header>
 
-        <section class="todo-list">
+        <section id="listRoot" class="todo-list">
             
         </section>
     </section>
+    
+    <script src="./todo.js"></script>
 </html>
