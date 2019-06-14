@@ -1,23 +1,24 @@
-// Author: Nicholas Fazzolari
+/* 
+Author: Nicholas Fazzolari
+**************************
+TODO:
+• Implement remove item functionality
+• Implement edit in place
+• Add form validation
+• Consider max and min values for lists and list items (performance)
+*/
 
-let listNameInput;
-let listItemInput;
+let listRoot = document.getElementById('listRoot'); // Entry point for DOM manipulation
 let listTitleEl;
 let newListEl;
 let listItemEl;
 let listItemCount = 0;
-let listRoot = document.getElementById('listRoot'); // Entry point for DOM manipulation
 
-// Gets the user input value of the form element for the list creation
-function getListName() {
-    listNameInput = document.getElementById('listTitle').value;
-}
-
-// Inserts a heading element and fills it with the form value
+// Inserts a heading element and fills it with the form value sets up empty ul
 function createList() {
     listTitleEl = document.createElement('h1');
     listTitleEl.id = "listTitle";
-    listTitleEl.innerText = listNameInput;
+    listTitleEl.innerText = document.getElementById('listTitle').value;
 
     newListEl = document.createElement('ul');
     newListEl.id = "todoList";
@@ -26,35 +27,19 @@ function createList() {
     listRoot.append(newListEl);
 }
 
-// Wrapped up for use with the button
-function eventCreateList() {
-    getListName();
-    createList();
-}
-
-// Gets user input value of the list item
-function getListItemName() {
-    listItemInput = document.getElementById('listItem').value;
-}
-
-// Inserts the list item into the DOM
+// Inserts the list item into the DOM with the user value
 function createListItem() {
     listItemEl = document.createElement('li');
     listItemCount++;
-    newListEl.id = listItemCount.toString();
-    listItemEl.innerText = listItemInput;
+    listItemEl.id = listItemCount.toString();
+    listItemEl.innerText = document.getElementById('listItem').value;
 
     newListEl.append(listItemEl);
 }
 
-// Wrapped up for use with the add listen item button
-function eventCreateListItem() {
-    getListItemName();
-    createListItem();
-}
-
+// Events handlers
 const submitListName = document.getElementById('submitListName');
-submitListName.addEventListener('click', eventCreateList, false);
+submitListName.addEventListener('click', createList, false);
 
 const submitListItem = document.getElementById('submitListItem');
-submitListItem.addEventListener('click', eventCreateListItem, false);
+submitListItem.addEventListener('click', createListItem, false);
