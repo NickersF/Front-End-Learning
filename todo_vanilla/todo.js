@@ -14,7 +14,7 @@ let listItemEl;
 let listRemButton;
 let listItemCount = 0;
 
-// Inserts a heading element and fills it with the form value sets up empty ul
+// Inserts a heading element and populates its textNode with the title form user value and insters the list DOM element of a new list.
 function createList() {
     listTitleEl = document.createElement('h1');
     listTitleEl.id = "listTitle";
@@ -27,7 +27,7 @@ function createList() {
     listRoot.append(newListEl);
 }
 
-// Inserts the list item into the ul with the value from the item form
+// Inserts the list item into the list element containing the list item form along with the removal UI elements.
 function createListItem() {
     listItemEl = document.createElement('li');
     listRemButton = document.createElement('button');
