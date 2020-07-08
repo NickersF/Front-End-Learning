@@ -1,13 +1,12 @@
 // Author Nicholas Fazzolari
 
+// Nice little print time function
+function printTime() {
+    const dateObj01 = new Date();
+    console.log(dateObj01.toLocaleTimeString());
+}
 
-const dateObj01 = new Date();
-const dateObj02 = new Date();
+printTime() // print time at execution
+setTimeout(printTime, 2000); // two seconds later print the time again
 
-dateObj02.setSeconds(0);
-
-console.log(dateObj01);
-console.log(dateObj01.toTimeString());
-console.log(dateObj01.getSeconds());
-
-console.log(dateObj02.getSeconds());
+setInterval(() => printTime(), 1000);
