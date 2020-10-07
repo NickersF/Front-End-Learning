@@ -1,0 +1,24 @@
+/* Author: Nicholas Fazzolari */
+
+body {
+    height: 100vh;
+}
+.container {
+    display: flex;
+}
+
+.expression-container {
+    display: flex;
+}
+
+.generate-expression-container {
+    display: flex;
+}
+
+.answer-container {
+    display: flex;
+}
+
+.result-container {
+    display: flex;
+}

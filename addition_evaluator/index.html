@@ -5,25 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Addition Evaluator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="expression-container">
-            <span id="expressionSpan">a + b = n</span>
+    <div class="container-fluid h-100 d-flex flex-column text-center bg-light">
+        <div class="row">
+            <div class="col">
+                <h1 id="expressionSpan">a + b = n</h1>
+            </div>
         </div>
-        <div class="generate-expression-container">
-            <button id="generateExpressionBtn">Generate New Expression</button>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary" id="generateExpressionBtn">Generate New Expression</button>
+            </div>
         </div>
-        <div class="answer-container">
-            <label for="answerInput">Enter Your Answer:</label>
-            <input type="text" id="answerInput" name="answerInput" size="1" value="VAL">
-            <input type="button" id="submitAnswerBtn" value="Submit Answer">
+        <div class="row mt-5">
+            <div class="col">
+                <label for="answerInput">Enter Your Answer:</label>
+            </div>
         </div>
-        <div class="result-container">
-            <h1 id="userAnswerDisplay"></h1>
+        <div class="row justify-content-center">
+            <div class="col-1">
+                <input class="form-control" type="text" id="answerInput" name="answerInput" size="1" value="VAL">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <input class="btn btn-primary" type="button" id="submitAnswerBtn" value="Submit Answer">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <h1 id="userAnswerDisplay"></h1>
+            </div>
         </div>
     </div>
 

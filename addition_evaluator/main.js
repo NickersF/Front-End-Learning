@@ -45,9 +45,11 @@ function getUserInputValue() {
 function evaluateExpression(a, b, userAnswer) {
     if (userAnswer === (a + b)) {
         userAnswerEl.innerHTML = "The answer: " +  a.toString() + " + " + b.toString() + " = " + userAnswer.toString() + " is correct! Good Job!";
+        userAnswerEl.style.color = "#4CAF50";
     }
     else {
         userAnswerEl.innerHTML = "The answer: " +  a.toString() + " + " + b.toString() + " = " + userAnswer.toString() + " is incorrect! Try again!";
+        userAnswerEl.style.color = "#f44336";
     }
 }
 
