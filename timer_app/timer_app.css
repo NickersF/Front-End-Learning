@@ -1,1 +1,28 @@
 /* Author: Nicholas Fazzolari */
+
+body {
+    height: 100vh;
+    color: #2A13AD;
+}
+.roboto-thin {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.roboto-regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.roboto-black {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.bg-gradient {
+    background: linear-gradient(#0F073D, 80%, #3719E0);
+}
+
+.item-bg {
+    background-color: #0A0025;
+}

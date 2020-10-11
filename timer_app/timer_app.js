@@ -4,26 +4,26 @@ Author: Nicholas Fazzolari
 JavaScript implementation for a basic HTML/CSS/JS Timer script.
  */
 
-let arrPos = 0;
+let posVal = 0;
 
 $(document).ready(function(){
     $('#upBtn').click(function() {
 
-        if (arrPos >= 10) {
-            arrPos = 9;
+        if (posVal >= 8) {
+            posVal = 8;
         }
 
-        $('#valueDisplay').text(arrPos);
-        arrPos++;
+        posVal++;
+        $('#valueDisplay').text(posVal);
     });
 
     $('#dnBtn').click(function() {
 
-        if (arrPos <= 0) {
-            arrPos = 0;
+        if (posVal <= 0) {
+            posVal = 1;
         }
 
-        $('#valueDisplay').text(arrPos);
-        arrPos--;
+        posVal--;
+        $('#valueDisplay').text(posVal);
     });
 });
