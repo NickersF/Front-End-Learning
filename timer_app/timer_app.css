@@ -26,3 +26,21 @@ body {
 .item-bg {
     background-color: #0A0025;
 }
+
+.time-selector-sizer {
+    padding: 1rem;
+    width: 64px;
+}
+
+.display-font {
+    font-size: 8rem;
+}
+
+.display-font-readout {
+    font-size: 4rem;
+}
+
+.button-padder {
+    font-size: 3rem;
+    padding: 16px;
+}

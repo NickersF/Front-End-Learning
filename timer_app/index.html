@@ -10,7 +10,7 @@
     <title>Minute and Second Timer App</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./timer_app.js"></script>
+    
     <!-- Roboto font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
     <!-- Custom style sheet -->
@@ -18,37 +18,78 @@
 </head>
 <body class="bg-gradient">
     <section class="container roboto-black">
-        <div class="row">
-            <div class="col">Hours up</div>
-            <div class="col">Minutes up</div>
-            <div class="col">Colon gutter</div>
-            <div class="col">Seconds tens up</div>
-            <div class="col">Seconds ones up</div>
+        <div class="row pt-4 pb-2">
+            <div class="col item-bg text-center rounded-lg mr-3">
+                <img id="hoursUpBtn" class="time-selector-sizer" src="./set_up.svg" alt="Up button">
+            </div>
+            <div class="col item-bg text-center rounded-lg">
+                <img id="minutesUpBtn" class="time-selector-sizer" src="./set_up.svg" alt="Up button">
+            </div>
+
+            <div class="col"></div>
+
+            <div class="col item-bg text-center rounded-lg mr-3">
+                <img id="tensSecsUpBtn" class="time-selector-sizer" src="./set_up.svg" alt="Up button">
+            </div>
+            <div class="col item-bg text-center rounded-lg">
+                <img id="onesSecsUpBtn" class="time-selector-sizer" src="./set_up.svg" alt="Up button">
+            </div>
         </div>
         <div class="row">
-            <div class="col">Hours display</div>
-            <div class="col">Minutes display</div>
-            <div class="col">Colon</div>
-            <div class="col">Seconds tens display</div>
-            <div class="col">Seconds ones display</div>
+            <div class="col item-bg text-center rounded-lg mr-3">
+                <div id="hoursSetDisplay" class="display-font">0</div>
+            </div>
+            <div class="col item-bg text-center rounded-lg">
+                <div class="display-font">0</div>
+            </div>
+            <div class="col text-center">
+                <div class="display-font">:</div>
+            </div>
+            <div class="col item-bg text-center rounded-lg mr-3">
+                <div class="display-font">0</div>
+            </div>
+            <div class="col item-bg text-center rounded-lg">
+                <div class="display-font">0</div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col">Hours down</div>
-            <div class="col">Minutes down</div>
-            <div class="col">Colon gutter</div>
-            <div class="col">Seconds tens down</div>
-            <div class="col">Seconds ones down</div>
+        <div class="row pt-2 pb-4">
+            <div class="col item-bg text-center rounded-lg mr-3">
+                <img id="hoursDnBtn" class="time-selector-sizer" src="./set_down.svg" alt="Down button">
+            </div>
+            <div class="col item-bg text-center rounded-lg">
+                <img id="minutesDnBtn" class="time-selector-sizer" src="./set_down.svg" alt="Down button">
+            </div>
+
+            <div class="col"></div>
+
+            <div class="col item-bg text-center rounded-lg mr-3">
+                <img id="tensSecsDnBtn" class="time-selector-sizer" src="./set_down.svg" alt="Down button">
+            </div>
+            <div class="col item-bg text-center rounded-lg">
+                <img id="onesSecsDnBtn" class="time-selector-sizer" src="./set_down.svg" alt="Down button">
+            </div>
         </div>
-        <div class="row">
-            <div class="col">Set</div>
-            <div class="col">Clear</div>
+
+        <div class="row justify-content-center pb-4">
+            <div class="col-3 item-bg text-center rounded-lg mr-4">
+                <div class="button-padder">Set</div>
+            </div>
+            <div class="col-3 item-bg text-center rounded-lg">
+                <div class="button-padder">Clear</div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col">Start</div>
+        <div class="row justify-content-center pb-4">
+            <div class="col-3 item-bg text-center rounded-lg">
+                <div class="button-padder">Start</div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col">Countdown display</div>
+        <div class="row justify-content-center">
+            <div class="col-6 item-bg text-center rounded-lg">
+                <div class="display-font-readout p-3">00:00</div>
+            </div>
         </div>
     </section>
+
+    <script src="./timer_app.js"></script>
 </body>
 </html>

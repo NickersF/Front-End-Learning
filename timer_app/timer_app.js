@@ -7,6 +7,15 @@ JavaScript implementation for a basic HTML/CSS/JS Timer script.
 let posVal = 0;
 
 $(document).ready(function(){
+
+    $('#hoursUpBtn').mousedown(function() {
+        $('#hoursUpBtn').attr('src', './set_up_glow.svg');
+    });
+
+    $('#hoursUpBtn').mouseup(function() {
+        $('#hoursUpBtn').attr('src', './set_up.svg');
+    });
+
     $('#upBtn').click(function() {
 
         if (posVal >= 8) {
@@ -26,4 +35,5 @@ $(document).ready(function(){
         posVal--;
         $('#valueDisplay').text(posVal);
     });
+
 });
