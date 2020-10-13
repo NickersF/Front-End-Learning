@@ -21,19 +21,23 @@ A basic pricing grid based on the flexbox layout engine.
 * The file **pricing_grid_preview.html** will show what many product options looks like in the browser.
 
 ## Random Color Background Event:
-A JavaScript that attached a click event to a 100vh (view height) body element
+A JavaScript that attached a click event to a `100vh` (view height) body element
 and generates a psuedorandom hexadecimal color before setting it to the body.
 
 ## User Registration Page
 A basic user registration page with form inputs that dislay submitted information.
 
+## Hour Based Countdown Timer App
+
 ## Addition Evaluator
+Using HTML, CSS, and JavaScript this small UI example is something that could be
+used in educational web software to solve math problems.
 
 ## Horizontal Navs
-
-## TODO Vanilla
+Examples of some common horizontal navigation UI components for the web.
 
 ## Switching Images Using JS
+A basic script that switches two images based on a given condition.
 
 ## TODO List - Implemented Using a Vanilla Web Development Stack
 Using only pure JavaScript, HTML5 and CSS3 to create the front end of a TODO list app.
