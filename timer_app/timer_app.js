@@ -14,7 +14,7 @@ $(document).ready(function(){
     // Hours up button events
     // ***********************
     $('#hoursUpBtn').mousedown(function() {
-        $('#hoursUpBtn').attr('src', './set_up_glow.svg');
+        $('#hoursUpBtn').attr('src', './set_up_glow.png');
 
         if (hoursPosVal >= 5) {
             hoursPosVal = 5;
@@ -25,13 +25,13 @@ $(document).ready(function(){
     });
 
     $('#hoursUpBtn').mouseup(function() {
-        $('#hoursUpBtn').attr('src', './set_up.svg');
+        $('#hoursUpBtn').attr('src', './set_up.png');
     });
 
     // Hours down button events
     // *************************
     $('#hoursDnBtn').mousedown(function() {
-        $('#hoursDnBtn').attr('src', './set_down_glow.svg');
+        $('#hoursDnBtn').attr('src', './set_down_glow.png');
         
         if (hoursPosVal <= 0) {
             hoursPosVal = 1;
@@ -42,13 +42,13 @@ $(document).ready(function(){
     });
 
     $('#hoursDnBtn').mouseup(function() {
-        $('#hoursDnBtn').attr('src', './set_down.svg');
+        $('#hoursDnBtn').attr('src', './set_down.png');
     });
 
     // Minutes up button events
     // *************************
     $('#minutesUpBtn').mousedown(function() {
-        $('#minutesUpBtn').attr('src', './set_up_glow.svg');
+        $('#minutesUpBtn').attr('src', './set_up_glow.png');
 
         if (minutesPosVal >= 8) {
             minutesPosVal = 8;
@@ -59,13 +59,13 @@ $(document).ready(function(){
     });
 
     $('#minutesUpBtn').mouseup(function() {
-        $('#minutesUpBtn').attr('src', './set_up.svg');
+        $('#minutesUpBtn').attr('src', './set_up.png');
     });
 
     // Minutes down button events
     // ***************************
     $('#minutesDnBtn').mousedown(function() {
-        $('#minutesDnBtn').attr('src', './set_down_glow.svg');
+        $('#minutesDnBtn').attr('src', './set_down_glow.png');
         
         if (minutesPosVal <= 0) {
             minutesPosVal = 1;
@@ -76,13 +76,13 @@ $(document).ready(function(){
     });
 
     $('#minutesDnBtn').mouseup(function() {
-        $('#minutesDnBtn').attr('src', './set_down.svg');
+        $('#minutesDnBtn').attr('src', './set_down.png');
     });
 
     // Seconds tens up button events
     // ******************************
     $('#tensSecsUpBtn').mousedown(function() {
-        $('#tensSecsUpBtn').attr('src', './set_up_glow.svg');
+        $('#tensSecsUpBtn').attr('src', './set_up_glow.png');
 
         if (secondsTensPosVal >= 5) {
             secondsTensPosVal = 5;
@@ -93,13 +93,13 @@ $(document).ready(function(){
     });
 
     $('#tensSecsUpBtn').mouseup(function() {
-        $('#tensSecsUpBtn').attr('src', './set_up.svg');
+        $('#tensSecsUpBtn').attr('src', './set_up.png');
     });
 
     // Seconds tens down button events
     // ********************************
     $('#tensSecsDnBtn').mousedown(function() {
-        $('#tensSecsDnBtn').attr('src', './set_down_glow.svg');
+        $('#tensSecsDnBtn').attr('src', './set_down_glow.png');
         
         if (secondsTensPosVal <= 0) {
             secondsTensPosVal = 1;
@@ -110,13 +110,13 @@ $(document).ready(function(){
     });
 
     $('#tensSecsDnBtn').mouseup(function() {
-        $('#tensSecsDnBtn').attr('src', './set_down.svg');
+        $('#tensSecsDnBtn').attr('src', './set_down.png');
     });
 
     // Seconds ones up button events
     // ******************************
     $('#onesSecsUpBtn').mousedown(function() {
-        $('#onesSecsUpBtn').attr('src', './set_up_glow.svg');
+        $('#onesSecsUpBtn').attr('src', './set_up_glow.png');
 
         if (secondsOnesPosVal >= 8) {
             secondsOnesPosVal = 8;
@@ -127,13 +127,13 @@ $(document).ready(function(){
     });
 
     $('#onesSecsUpBtn').mouseup(function() {
-        $('#onesSecsUpBtn').attr('src', './set_up.svg');
+        $('#onesSecsUpBtn').attr('src', './set_up.png');
     });
 
-        // Seconds tens down button events
+    // Seconds tens down button events
     // ********************************
     $('#onesSecsDnBtn').mousedown(function() {
-        $('#onesSecsDnBtn').attr('src', './set_down_glow.svg');
+        $('#onesSecsDnBtn').attr('src', './set_down_glow.png');
         
         if (secondsOnesPosVal <= 0) {
             secondsOnesPosVal = 1;
@@ -144,7 +144,7 @@ $(document).ready(function(){
     });
 
     $('#onesSecsDnBtn').mouseup(function() {
-        $('#onesSecsDnBtn').attr('src', './set_down.svg');
+        $('#onesSecsDnBtn').attr('src', './set_down.png');
     });
 
     // Clear Button

@@ -19,81 +19,81 @@
 <body class="bg-gradient">
     <section class="container roboto-black">
         <div class="row pt-4 pb-2">
-            <div class="col item-bg text-center rounded-lg mr-3">
-                <img id="hoursUpBtn" class="time-selector-sizer" src="./set_up.svg" alt="Up button">
+            <div class="col up-cursor item-bg text-center rounded-lg mr-3">
+                <img id="hoursUpBtn" class="img-fluid time-selector-sizer" src="./set_up.png" alt="Up button">
             </div>
-            <div class="col item-bg text-center rounded-lg">
-                <img id="minutesUpBtn" class="time-selector-sizer" src="./set_up.svg" alt="Up button">
-            </div>
-
-            <div class="col">
-                
+            <div class="col up-cursor item-bg text-center rounded-lg">
+                <img id="minutesUpBtn" class="img-fluid time-selector-sizer" src="./set_up.png" alt="Up button">
             </div>
 
-            <div class="col item-bg text-center rounded-lg mr-3">
-                <img id="tensSecsUpBtn" class="time-selector-sizer" src="./set_up.svg" alt="Up button">
+            <div class="col-1"></div>
+
+            <div class="col up-cursor item-bg text-center rounded-lg mr-3">
+                <img id="tensSecsUpBtn" class="img-fluid time-selector-sizer" src="./set_up.png" alt="Up button">
             </div>
-            <div class="col item-bg text-center rounded-lg">
-                <img id="onesSecsUpBtn" class="time-selector-sizer" src="./set_up.svg" alt="Up button">
+            <div class="col up-cursor item-bg text-center rounded-lg">
+                <img id="onesSecsUpBtn" class="img-fluid time-selector-sizer" src="./set_up.png" alt="Up button">
             </div>
         </div>
         <div class="row">
-            <div class="col item-bg text-center rounded-lg mr-3">
+            <div class="col point-cursor item-bg text-center rounded-lg mr-3">
                 <div id="hoursSetDisplay" class="display-font">0</div>
             </div>
-            <div class="col item-bg text-center rounded-lg">
+            <div class="col point-cursor item-bg text-center rounded-lg">
                 <div id="minutesSetDisplay" class="display-font">0</div>
             </div>
 
-            <div class="col text-center">
+            <div class="col-1 text-center">
                 <div class="display-font">:</div>
             </div>
 
-            <div class="col item-bg text-center rounded-lg mr-3">
+            <div class="col point-cursor item-bg text-center rounded-lg mr-3">
                 <div id="secondsTensDisplay" class="display-font">0</div>
             </div>
-            <div class="col item-bg text-center rounded-lg">
+            <div class="col point-cursor item-bg text-center rounded-lg">
                 <div id="secondsOnesDisplay" class="display-font">0</div>
             </div>
         </div>
         <div class="row pt-2 pb-4">
-            <div class="col item-bg text-center rounded-lg mr-3">
-                <img id="hoursDnBtn" class="time-selector-sizer" src="./set_down.svg" alt="Down button">
+            <div class="col dn-cursor item-bg text-center rounded-lg mr-3">
+                <img id="hoursDnBtn" class="img-fluid time-selector-sizer" src="./set_down.png" alt="Down button">
             </div>
-            <div class="col item-bg text-center rounded-lg">
-                <img id="minutesDnBtn" class="time-selector-sizer" src="./set_down.svg" alt="Down button">
+            <div class="col dn-cursor item-bg text-center rounded-lg">
+                <img id="minutesDnBtn" class="img-fluid time-selector-sizer" src="./set_down.png" alt="Down button">
             </div>
 
-            <div class="col"></div>
+            <div class="col-1"></div>
 
-            <div class="col item-bg text-center rounded-lg mr-3">
-                <img id="tensSecsDnBtn" class="time-selector-sizer" src="./set_down.svg" alt="Down button">
+            <div class="col dn-cursor item-bg text-center rounded-lg mr-3">
+                <img id="tensSecsDnBtn" class="img-fluid time-selector-sizer" src="./set_down.png" alt="Down button">
             </div>
-            <div class="col item-bg text-center rounded-lg">
-                <img id="onesSecsDnBtn" class="time-selector-sizer" src="./set_down.svg" alt="Down button">
+            <div class="col dn-cursor item-bg text-center rounded-lg">
+                <img id="onesSecsDnBtn" class="img-fluid time-selector-sizer" src="./set_down.png" alt="Down button">
             </div>
         </div>
 
         <div class="row justify-content-center pb-4">
-            <div class="col-3 item-bg text-center rounded-lg mr-4">
-                <div class="button-padder">Set</div>
+            <div class="col-5 item-bg rounded-lg mr-3">
+                <div class="button-padder text-center point-cursor">Set</div>
             </div>
-            <div class="col-3 item-bg text-center rounded-lg">
-                <div id="clearButton" class="button-padder">Clear</div>
+            <div class="col-5 item-bg rounded-lg">
+                <div id="clearButton" class="button-padder text-center point-cursor">Clear</div>
             </div>
         </div>
         <div class="row justify-content-center pb-4">
-            <div class="col-3 item-bg text-center rounded-lg">
-                <div class="button-padder">Start</div>
+            <div class="col-6 item-bg rounded-lg">
+                <div class="button-padder text-center point-cursor">Start</div>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-6 item-bg text-center rounded-lg">
-                <div class="display-font-readout p-3">00:00</div>
+            <div class="col-8 item-bg rounded-lg">
+                <div class="display-font-readout p-3 text-center">00:00</div>
             </div>
         </div>
     </section>
 
     <script src="./timer_app.js"></script>
+    <script src="./timer_app_effects.js"></script>
+    <!-- <script src="./timer_app_fn_test.js"></script> -->
 </body>
 </html>

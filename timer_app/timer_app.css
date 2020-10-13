@@ -4,6 +4,7 @@ body {
     height: 100vh;
     color: #2A13AD;
 }
+
 .roboto-thin {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -28,19 +29,31 @@ body {
 }
 
 .time-selector-sizer {
-    padding: 1rem;
-    width: 64px;
+    padding: 1em;
 }
 
 .display-font {
-    font-size: 8rem;
+    font-size: 3em;
 }
 
 .display-font-readout {
-    font-size: 4rem;
+    font-size: 3em;
 }
 
 .button-padder {
-    font-size: 3rem;
+    font-size: 3em;
     padding: 16px;
+}
+
+
+.up-cursor {
+    cursor: n-resize;
+}
+
+.dn-cursor {
+    cursor: s-resize;
+}
+
+.point-cursor {
+    cursor: pointer;
 }
