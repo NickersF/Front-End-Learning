@@ -34,7 +34,7 @@ Implements a countdown timer that provides a 60 minute maximum value. Features
 include clearing the timer, individual controls to set the time using buttons,
 pausing the timer. This project uses JQuery to manage events, CSSOM, and DOM manipulation.
 * The file **timer_app.js** implements the button UI states.
-* The file **timer_app.js** implements a function based version of the UI states.
+* The file **timer_app_fn_test.js** implements a function based version of the UI states.
 * The file **timer_logic.js** imeplements the countdown timer functionality.
 
 ## Addition Evaluator
@@ -49,7 +49,7 @@ with responsive design features using HTML, CSS, and JavaScript.
 * Panel based horizontal nav
 * Bottom border horizontal nav
 * Context colored horizontal nav
-    ** Each nav has a different tab color based on named/context
+    * Each nav has a different tab color based on name/context
 
 ## Switching Images Using JS
 A basic script that switches two images based on a given condition.
