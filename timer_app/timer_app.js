@@ -4,10 +4,15 @@ Author: Nicholas Fazzolari
 JavaScript implementation for a basic HTML/CSS/JS Timer script.
  */
 
+// User time values
 let hoursPosVal = 0;
 let minutesPosVal = 0;
 let secondsTensPosVal = 0;
 let secondsOnesPosVal = 0;
+// Future date object where user time values will be set
+let countDownDate = new Date();
+// the countdown display element
+let countDownOutputEl = document.getElementById('countDownOutput');
 
 $(document).ready(function(){
 
@@ -147,6 +152,21 @@ $(document).ready(function(){
         $('#onesSecsDnBtn').attr('src', './set_down.png');
     });
 
+    // Set Button
+    // **********
+    $('#setButton').click(function() {
+        let minutesString = hoursPosVal.toString() + minutesPosVal.toString();
+        let secondsString = secondsTensPosVal.toString() + secondsOnesPosVal.toString();
+
+        parseInt(minutesString);
+        parseInt(secondsString);
+
+        countDownDate.setMinutes(minutesString);
+        countDownDate.setSeconds(secondsString);
+
+        $('#countDownOutput').text(minutesString + " : " + secondsString);
+    });
+
     // Clear Button
     // ************
     $('#clearButton').click(function() {
@@ -155,4 +175,33 @@ $(document).ready(function(){
         $('#secondsTensDisplay').text(secondsTensPosVal = 0);
         $('#secondsOnesDisplay').text(secondsOnesPosVal = 0);
     });
+
+    // Start Button
+    // ************
+    $('#startButton').click(function() {
+
+        countDownAction();
+
+    });
 });
+
+function countDownAction() {
+    var x = setInterval(function() {
+
+        var now = new Date().getTime();
+    
+        var distance = countDownDate - now;
+    
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+        countDownOutputEl.innerHTML = hours + "h "
+        + minutes + "m " + seconds + "s ";
+    
+        if (distance < 0) {
+            clearInterval(x);
+            countDownOutputEl.innerHTML = "EXPIRED";
+        }
+    }, 1000);
+}
