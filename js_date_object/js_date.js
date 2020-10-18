@@ -1,13 +1,18 @@
 // Author Nicholas Fazzolari
 
 var countDownDate = new Date()
-countDownDate.setHours(23);
-countDownDate.setMinutes(44);
-countDownDate.setSeconds(12);
+//countDownDate.setHours(00);
+countDownDate.setMinutes(56);
+countDownDate.setSeconds(17);
 countDownDate.getTime();
 
-var x = setInterval(function() {
+var timerFunc;
 
+function startTimer() {
+    setInterval(countdownTimer, 1000);
+}
+
+function countdownTimer() {
     var now = new Date().getTime();
 
     var distance = countDownDate - now;
@@ -16,11 +21,13 @@ var x = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("demo").innerHTML = hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+}
 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
+function stopCountdownTimer() {
+    clearInterval();
+}
+
+var testDateObject = Date.now();
+
+console.log(testDateObject.toLocaleString());
