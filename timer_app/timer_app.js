@@ -2,6 +2,7 @@
 Author: Nicholas Fazzolari
 
 JavaScript implementation for a basic HTML/CSS/JS Timer script.
+Implements the UI controls and state using jQurey and JavaScript
  */
 
 // User time values
@@ -13,7 +14,6 @@ let secondsOnesPosVal = 0;
 $(document).ready(function(){
 
     // Hours up button events
-    // ***********************
     $('#hoursUpBtn').mousedown(function() {
         $('#hoursUpBtn').attr('src', './set_up_glow.png');
 
@@ -30,7 +30,6 @@ $(document).ready(function(){
     });
 
     // Hours down button events
-    // *************************
     $('#hoursDnBtn').mousedown(function() {
         $('#hoursDnBtn').attr('src', './set_down_glow.png');
         
@@ -47,7 +46,6 @@ $(document).ready(function(){
     });
 
     // Minutes up button events
-    // *************************
     $('#minutesUpBtn').mousedown(function() {
         $('#minutesUpBtn').attr('src', './set_up_glow.png');
 
@@ -64,7 +62,6 @@ $(document).ready(function(){
     });
 
     // Minutes down button events
-    // ***************************
     $('#minutesDnBtn').mousedown(function() {
         $('#minutesDnBtn').attr('src', './set_down_glow.png');
         
@@ -81,7 +78,6 @@ $(document).ready(function(){
     });
 
     // Seconds tens up button events
-    // ******************************
     $('#tensSecsUpBtn').mousedown(function() {
         $('#tensSecsUpBtn').attr('src', './set_up_glow.png');
 
@@ -98,7 +94,6 @@ $(document).ready(function(){
     });
 
     // Seconds tens down button events
-    // ********************************
     $('#tensSecsDnBtn').mousedown(function() {
         $('#tensSecsDnBtn').attr('src', './set_down_glow.png');
         
@@ -115,7 +110,6 @@ $(document).ready(function(){
     });
 
     // Seconds ones up button events
-    // ******************************
     $('#onesSecsUpBtn').mousedown(function() {
         $('#onesSecsUpBtn').attr('src', './set_up_glow.png');
 
@@ -132,7 +126,6 @@ $(document).ready(function(){
     });
 
     // Seconds tens down button events
-    // ********************************
     $('#onesSecsDnBtn').mousedown(function() {
         $('#onesSecsDnBtn').attr('src', './set_down_glow.png');
         
@@ -149,7 +142,6 @@ $(document).ready(function(){
     });
 
     // Set Button
-    // **********
     $('#setButton').click(function() {
         let minutesString = hoursPosVal.toString() + minutesPosVal.toString();
         let secondsString = secondsTensPosVal.toString() + secondsOnesPosVal.toString();
@@ -166,7 +158,6 @@ $(document).ready(function(){
     });
 
     // Clear Button
-    // ************
     $('#clearButton').click(function() {
         $('#hoursSetDisplay').text(hoursPosVal = 0);
         $('#minutesSetDisplay').text(minutesPosVal = 0);
@@ -178,7 +169,6 @@ $(document).ready(function(){
     });
 
     // Start Button
-    // ************
     $('#startButton').click(function() {
         // Call countdown function
     });
