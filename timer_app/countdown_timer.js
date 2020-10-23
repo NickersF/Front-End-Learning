@@ -17,17 +17,9 @@ let timeStringEl = document.getElementById('timeString');
 let startTimer = setInterval(countDownTimer, 1000);
 
 function countDownTimer() {
+    
     if (timeObject.secondsOnesValue != 0) {
         timeObject.secondsOnesValue--;
-    }
-    if (timeObject.secondsTensValue != 0) {
-        timeObject.secondsTensValue--;
-    }
-    if (timeObject.minutesOnesValue != 0) {
-        timeObject.minutesOnesValue--;
-    }
-    if (timeObject.minutesTensValue != 0) {
-        timeObject.minutesTensValue--;
     }
 
     timeStringEl.innerHTML = timeObject.minutesTensValue + timeObject.minutesOnesValue + " : " + timeObject.secondsTensValue + timeObject.secondsOnesValue;

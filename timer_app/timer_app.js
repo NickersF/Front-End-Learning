@@ -149,11 +149,6 @@ $(document).ready(function(){
         parseInt(minutesString);
         parseInt(secondsString);
 
-        countDownDate.setMinutes(minutesString);
-        countDownDate.setSeconds(secondsString);
-        countDownDate.getTime();
-
-
         $('#countdownOutput').text(minutesString + " : " + secondsString);
     });
 
