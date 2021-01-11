@@ -9,5 +9,9 @@
   "author": "Nicholas Fazzolari",
   "license": "ISC",
   "dependencies": {
+    "typescript": "^4.2.0-dev.20210108"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.5"
   }
 }
