@@ -1,34 +1,47 @@
-/* Author: Nicholas Fazzolari */
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000a12;
-    color: #cfd8dc;
-}
-
-/* Background gradients */
-
-.card-gradient-background {
-    background: linear-gradient(#000a12, #12005e);
-}
- 
-/* Poppins font-family set */
 .poppins-light {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 .poppins-regular {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .poppins-bold {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 .poppins-black {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
 }
+
+.pink-background {
+  background-color: #F274D0;
+}
+
+.blue-background {
+  background-color: #48B8EF;
+}
+
+.pink-box {
+  background-color: #F274D0;
+  width: 128px;
+  height: 128px;
+}
+
+.blue-box {
+  background-color: #48B8EF;
+  width: 128px;
+  height: 128px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #090D11;
+  color: #5E88AD;
+}
+
+/*# sourceMappingURL=styles.css.map */

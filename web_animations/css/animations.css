@@ -1,1 +1,28 @@
 /* Author: Nichoals Fazzolari */
+.loader-wrapper {
+  width: 128px;
+  height: 128px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.loader::after {
+  content: "";
+  width: 64px;
+  height: 64px;
+  border: 10px solid #BDBDBD;
+  border-top-color: #1976D2;
+  border-radius: 50%;
+  animation: loader 1s infinite;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */

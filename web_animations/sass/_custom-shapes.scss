@@ -1,0 +1,15 @@
+// Custom shapes
+
+@use '_colors' as colors;
+
+.pink-box {
+    background-color: colors.$bubblegum_pink;
+    width: 128px;
+    height: 128px;
+}
+
+.blue-box {
+    background-color: colors.$bubblegum_blue;
+    width: 128px;
+    height: 128px;
+}
