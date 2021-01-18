@@ -3,9 +3,6 @@
 @use '_fonts.scss';
 @use '_colors.scss' as colors;
 @use '_custom-shapes.scss';
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: colors.$dark_blue;
-    color: colors.$text_blue;
-}
+@use '_global-styles.scss';
+@use '_animations.scss';
+@use '_helpers.scss';

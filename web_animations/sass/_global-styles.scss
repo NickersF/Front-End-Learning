@@ -1,0 +1,9 @@
+// Global styles
+
+@use '_colors.scss' as colors;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: colors.$dark_blue;
+    color: colors.$text_blue;
+}

@@ -26,6 +26,22 @@
   background-color: #48B8EF;
 }
 
+.darkblue-text {
+  color: #090D11;
+}
+
+.hinted-text {
+  color: #5E88AD;
+}
+
+.pink-text {
+  color: #F274D0;
+}
+
+.blue-text {
+  color: #48B8EF;
+}
+
 .pink-box {
   background-color: #F274D0;
   width: 128px;
@@ -42,6 +58,36 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #090D11;
   color: #5E88AD;
+}
+
+/* Author: Nichoals Fazzolari */
+.loader-wrapper {
+  width: 128px;
+  height: 128px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.loader::after {
+  content: "";
+  width: 64px;
+  height: 64px;
+  border: 10px solid #BDBDBD;
+  border-top-color: #1976D2;
+  border-radius: 50%;
+  animation: loader 1s infinite;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.box-height-16rem {
+  min-height: 16rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
