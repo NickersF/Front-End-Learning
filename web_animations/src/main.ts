@@ -1,5 +1,5 @@
-let titleMessageContent = "DOM Animations and CSS Transitions"
+let titleMessageContent = "Tranformations, Transitions, and Animations in CSS and JavaScript";
 
 $(document).ready(function() {
-    $("#MainTitle").text(titleMessageContent)
+    $("#MainTitle").text(titleMessageContent);
 });
