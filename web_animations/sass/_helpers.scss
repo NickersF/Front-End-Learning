@@ -2,6 +2,31 @@
 
 @use '_colors' as colors;
 
-.box- height-16rem {
+// z-index map
+$zindicies: ("01": 1, "02": 2, "03": 2);
+
+// generates ranged z-index classes based on values in the zindicies map
+@each $key, $value in $zindicies {
+    .z-index-#{$key} {
+        z-index: $value;
+    }
+}
+
+// opacity map
+$opacityMap: ("0": 0%, "25": 25%, "50": 50%, "75": 75%, "100": 100%);
+
+// generates ranged opacity classes based on the values in the opacity map
+@each $key, $value in $opacityMap {
+    .opac-#{$key} {
+        opacity: $value;
+    }
+}
+
+.box-min-height-16rem {
     min-height: 16rem;
+}
+
+.absolute-zeroed-top {
+    top: 0px;
+    left: 0px;
 }

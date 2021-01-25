@@ -54,14 +54,63 @@
   height: 128px;
 }
 
+.yellow-box {
+  background-color: #FFD54F;
+  width: 128px;
+  height: 128px;
+}
+
+.orange-box {
+  background-color: #FF9800;
+  width: 128px;
+  height: 128px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #090D11;
   color: #5E88AD;
 }
 
-.box- height-16rem {
+.z-index-01 {
+  z-index: 1;
+}
+
+.z-index-02 {
+  z-index: 2;
+}
+
+.z-index-03 {
+  z-index: 2;
+}
+
+.opac-0 {
+  opacity: 0%;
+}
+
+.opac-25 {
+  opacity: 25%;
+}
+
+.opac-50 {
+  opacity: 50%;
+}
+
+.opac-75 {
+  opacity: 75%;
+}
+
+.opac-100 {
+  opacity: 100%;
+}
+
+.box-min-height-16rem {
   min-height: 16rem;
+}
+
+.absolute-zeroed-top {
+  top: 0px;
+  left: 0px;
 }
 
 /* Author: Nichoals Fazzolari */
@@ -89,6 +138,13 @@ body {
   to {
     transform: rotate(1turn);
   }
+}
+.translate-element {
+  transform: translate(64px, 64px);
+}
+
+.rotate-element {
+  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=styles.css.map */
