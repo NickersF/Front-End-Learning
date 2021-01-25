@@ -4,5 +4,7 @@
 @use '_colors.scss' as colors;
 @use '_custom-shapes.scss';
 @use '_global-styles.scss';
-@use '_animations.scss';
 @use '_helpers.scss';
+
+@use './components/loader.scss';
+@use './components/translate.scss';

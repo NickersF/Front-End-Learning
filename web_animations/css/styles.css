@@ -60,6 +60,10 @@ body {
   color: #5E88AD;
 }
 
+.box- height-16rem {
+  min-height: 16rem;
+}
+
 /* Author: Nichoals Fazzolari */
 .loader-wrapper {
   width: 128px;
@@ -85,9 +89,6 @@ body {
   to {
     transform: rotate(1turn);
   }
-}
-.box-height-16rem {
-  min-height: 16rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
