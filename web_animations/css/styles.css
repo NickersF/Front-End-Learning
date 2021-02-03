@@ -144,7 +144,19 @@ body {
 }
 
 .rotate-element {
-  transform: rotate(45deg);
+  transform: rotate(45);
+}
+
+.scale-element {
+  transform: scale(16px, 16px);
+}
+
+.scaleX-element {
+  transform: scaleX(16px);
+}
+
+.scaleY-element {
+  transform: scaleY(16px);
 }
 
 /*# sourceMappingURL=styles.css.map */
