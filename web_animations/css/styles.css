@@ -144,19 +144,11 @@ body {
 }
 
 .rotate-element {
-  transform: rotate(45);
+  transform: rotate(33deg);
 }
 
 .scale-element {
-  transform: scale(2, 3);
-}
-
-.scaleX-element {
-  transform: scaleX(2);
-}
-
-.scaleY-element {
-  transform: scaleY(2);
+  transform: scale(2, 2);
 }
 
 /*# sourceMappingURL=styles.css.map */
