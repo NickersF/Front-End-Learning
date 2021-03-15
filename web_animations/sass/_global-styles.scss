@@ -5,5 +5,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: colors.$dark_blue;
-    color: colors.$text_blue;
+    color: colors.$text_lighter_blue;
+}
+
+.page-full-height {
+    height: 100%;
 }

@@ -69,7 +69,11 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #090D11;
-  color: #5E88AD;
+  color: #90A4AE;
+}
+
+.page-full-height {
+  height: 100%;
 }
 
 .z-index-01 {
@@ -149,6 +153,14 @@ body {
 
 .scale-element {
   transform: scale(2, 2);
+}
+
+.scaleX-element {
+  transform: scaleX(2);
+}
+
+.scaleY-element {
+  transform: scaleY(2);
 }
 
 /*# sourceMappingURL=styles.css.map */
