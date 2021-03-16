@@ -1,0 +1,8 @@
+<svg id="Basic_Objects" xmlns="http://www.w3.org/2000/svg" width="609" height="256" viewBox="0 0 609 256">
+  <g id="Rect_B">
+    <path d="M460.5,229V479h-250V229h250m3-3h-256V482h256V226Z" transform="translate(-207.5 -226)" style="fill: #1a1a1a"/>
+  </g>
+  <g id="Rect_A">
+    <path d="M813.5,229V479h-250V229h250m3-3h-256V482h256V226Z" transform="translate(-207.5 -226)" style="fill: #1a1a1a"/>
+  </g>
+</svg>

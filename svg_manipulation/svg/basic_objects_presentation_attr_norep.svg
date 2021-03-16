@@ -1,0 +1,11 @@
+<svg id="Basic_Objects" xmlns="http://www.w3.org/2000/svg" width="629.51" height="433.35" viewBox="0 0 629.51 433.35">
+  <g id="Rect_B">
+    <rect x="22.01" y="178.85" width="253" height="253" fill="#3fa9f5"/>
+    <path d="M460.5,229V479h-250V229h250m3-3h-256V482h256V226Z" transform="translate(-186.99 -48.65)" fill="#1a1a1a"/>
+  </g>
+  <g id="Rect_A">
+    <rect x="375.01" y="178.85" width="253" height="253" fill="#ff7bac"/>
+    <path d="M813.5,229V479h-250V229h250m3-3h-256V482h256V226Z" transform="translate(-186.99 -48.65)" fill="#1a1a1a"/>
+  </g>
+  <path id="Shape_A" d="M282.5,115.5c6.93,16.29,22.22,45.08,53,62,73.23,40.26,183.76-14.28,185-53,.73-22.89-36.39-50.73-70-50-50.27,1.09-69.39,65.59-104,59-31.74-6-27.35-62.53-69-79-37.48-14.82-89.67,11.68-89,28C189.28,101.67,263.29,112.81,282.5,115.5Z" transform="translate(-186.99 -48.65)" fill="#ff7bac" stroke="#1a1a1a" stroke-miterlimit="10" stroke-width="3"/>
+</svg>
