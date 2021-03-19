@@ -1,0 +1,12 @@
+// Navigation styles
+
+@use '_colors.scss' as colors;
+
+.nav-container {
+    border-style: solid;
+    border-color: colors.$bubblegum_blue;
+    border-width: 1px;
+
+    padding: 1rem;
+    margin: 0.5rem;
+}

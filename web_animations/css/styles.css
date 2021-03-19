@@ -117,6 +117,14 @@ body {
   left: 0px;
 }
 
+.nav-container {
+  border-style: solid;
+  border-color: #48B8EF;
+  border-width: 1px;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
 /* Author: Nichoals Fazzolari */
 .loader-wrapper {
   width: 128px;

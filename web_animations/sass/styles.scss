@@ -1,10 +1,11 @@
-// Colors and global color set
+// Main entry point for sass components
 
 @use '_fonts.scss';
 @use '_colors.scss' as colors;
 @use '_custom-shapes.scss';
 @use '_global-styles.scss';
 @use '_helpers.scss';
+@use '_navigation.scss';
 
 @use './components/loader.scss';
 @use './components/translate.scss';
