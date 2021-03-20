@@ -12,11 +12,8 @@
 var count = 0;
 
 $(document).ready(function(){
-	
-	$("#mOver").mouseover(function() {
-		
-		count++;
-		console.log(count);
-	});
 
+	let sampleCountiesSVGObj = document.getElementById("sampleCountiesSVGObj");
+	let svgDocumentSampleCounties = sampleCountiesSVGObj.contentDocument;
+	
   }); 
