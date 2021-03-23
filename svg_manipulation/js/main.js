@@ -16,4 +16,23 @@ $(document).ready(function(){
 	let sampleCountiesSVGObj = document.getElementById("sampleCountiesSVGObj");
 	let svgDocumentSampleCounties = sampleCountiesSVGObj.contentDocument;
 	
+	for (let index = 0; index < array.length; index++) {
+		const element = array[index];
+		
+		// entry point
+
+	}
+
+	function mapObjectEventDelegate() {
+		
+		if (not selected) {
+			add click with selectCounty();
+		}
+
+		if (selected) {
+			add click with deselectCounty();
+		}
+	}
+
+	function selectCounty()
   }); 
