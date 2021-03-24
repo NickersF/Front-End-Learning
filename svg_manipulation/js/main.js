@@ -15,6 +15,9 @@ $(document).ready(function(){
 
 	let sampleCountiesSVGObj = document.getElementById("sampleCountiesSVGObj");
 	let svgDocumentSampleCounties = sampleCountiesSVGObj.contentDocument;
+	let ulChildren = $(".list-group").children();
+
+	console.log(ulChildren);
 	
 	for (let index = 0; index < array.length; index++) {
 		const element = array[index];
@@ -24,15 +27,7 @@ $(document).ready(function(){
 	}
 
 	function mapObjectEventDelegate() {
-		
-		if (not selected) {
-			add click with selectCounty();
-		}
 
-		if (selected) {
-			add click with deselectCounty();
-		}
+		// do things
 	}
-
-	function selectCounty()
   }); 
