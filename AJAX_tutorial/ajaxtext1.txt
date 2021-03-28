@@ -1,0 +1,1 @@
+Hi! I came from an AJAX request. Very cool! I was edited.
