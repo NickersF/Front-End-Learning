@@ -4,16 +4,27 @@ class Person {
     userName;
     password;
     email;
+
+    get getUserInfoString() {
+        return this.userName + "," + this.password + "," + this.email + "\n";
+    }
 }
-
-let aPerson = new Person();
-
-aPerson.userName = "Nick";
-aPerson.password = "password";
-aPerson.email = "nick@domain.com";
 
 $(document).ready(function() {
 
-    $("#displayPerson").text(aPerson.userName + ", " + aPerson.password + ", " + aPerson.email);
+    $("#newUserSubmit_btn").click(function() {
+
+        let newUser = new Person();
+        // let userNameString = $("#userNameInput").val();
+
+        newUser.userName = $("#userNameInput").val();
+        newUser.password = $("#passwordInput").val();
+        newUser.email = $("#emailInput").val();
+        $("#displayPerson").text(newUser.getUserInfoString);
+        console.log(newUser);
+        console.log(newUser.getUserInfoString);
+    });
 
 });
+
+// Accordion: event element if true slide up if false slide down
