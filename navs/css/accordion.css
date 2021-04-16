@@ -1,0 +1,30 @@
+/* Author: Nicholas Fazzolari */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #151515;
+}
+
+.accordion-header-cust {
+    color: #FAFAFA;
+    background-color: #43A047;
+    /* width: 24rem; */
+}
+
+.accordion-body-cust {
+    color: #757575;
+    background-color: #212121;
+    /* width: 24rem; */
+    display: none;
+}
+
+.accordion-header-txt {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.accordion-body-txt {
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+}
