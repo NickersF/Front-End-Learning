@@ -72,10 +72,6 @@ body {
   color: #90A4AE;
 }
 
-.page-full-height {
-  height: 100%;
-}
-
 .z-index-01 {
   z-index: 1;
 }
@@ -169,6 +165,26 @@ body {
 
 .scaleY-element {
   transform: scaleY(2);
+}
+
+.blood-orange-bkg {
+  background-color: #EF3E2D;
+}
+
+@keyframes animateDiv {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+.animate-div-el {
+  height: 0%;
+  animation-name: animateDiv;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=styles.css.map */

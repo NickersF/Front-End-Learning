@@ -1,0 +1,18 @@
+@use '../_colors.scss' as colors;
+
+.blood-orange-bkg {
+    background-color: colors.$PANTONE_P_45-8_C;
+}
+
+@keyframes animateDiv {
+    from { height: 0%;}
+    to {height: 100%;}
+}
+
+.animate-div-el {
+    height: 0%;
+    animation-name: animateDiv;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
