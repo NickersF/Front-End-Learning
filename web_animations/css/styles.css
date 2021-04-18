@@ -26,12 +26,20 @@
   background-color: #48B8EF;
 }
 
+.blood-orange-bkg {
+  background-color: #EF3E2D;
+}
+
 .darkblue-text {
   color: #090D11;
 }
 
 .hinted-text {
   color: #5E88AD;
+}
+
+.hinted-text-lt {
+  color: #ECEFF1;
 }
 
 .pink-text {
@@ -167,10 +175,6 @@ body {
   transform: scaleY(2);
 }
 
-.blood-orange-bkg {
-  background-color: #EF3E2D;
-}
-
 @keyframes animateDiv {
   from {
     height: 0%;
@@ -182,7 +186,25 @@ body {
 .animate-div-el {
   height: 0%;
   animation-name: animateDiv;
-  animation-duration: 1.5s;
+  animation-duration: 1.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animateBorder {
+  from {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+  }
+  to {
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+  }
+}
+.animate-border-el {
+  border-top-left-radius: 0%;
+  animation-name: animateBorder;
+  animation-duration: 1.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

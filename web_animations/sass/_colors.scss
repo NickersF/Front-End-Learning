@@ -2,6 +2,7 @@ $dark_blue: #090D11;
 $medium_dark_blue: #0E141A;
 $text_blue: #5E88AD;
 $text_lighter_blue: #90A4AE;
+$text_ultralt_blue: #ECEFF1;
 $bubblegum_pink: #F274D0;
 $bubblegum_blue: #48B8EF;
 $yellow_light: #FFD54F;
@@ -18,12 +19,20 @@ $PANTONE_P_45-8_C: #EF3E2D;
     background-color: $bubblegum_blue;
 }
 
+.blood-orange-bkg {
+    background-color: $PANTONE_P_45-8_C;
+}
+
 .darkblue-text {
     color: $dark_blue;
 }
 
 .hinted-text {
     color: $text_blue;
+}
+
+.hinted-text-lt {
+    color: $text_ultralt_blue;
 }
 
 .pink-text {
