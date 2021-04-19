@@ -183,9 +183,25 @@ body {
     height: 100%;
   }
 }
+@keyframes animateDivReverse {
+  from {
+    heigh: 100%;
+  }
+  to {
+    height: auto;
+  }
+}
 .animate-div-el {
   height: 0%;
   animation-name: animateDiv;
+  animation-duration: 1.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.animate-div-el-reverse {
+  height: 100%;
+  animation-name: animateDivReverse;
   animation-duration: 1.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -197,14 +213,34 @@ body {
     border-bottom-left-radius: 0%;
   }
   to {
-    border-top-left-radius: 100%;
-    border-bottom-left-radius: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+}
+@keyframes animateBorderReverse {
+  from {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  to {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
   }
 }
 .animate-border-el {
   border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
   animation-name: animateBorder;
-  animation-duration: 1.25s;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.animate-border-el-reverse {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  animation-name: animateBorderReverse;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

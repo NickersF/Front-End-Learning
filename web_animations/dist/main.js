@@ -1,6 +1,8 @@
-var titleMessageContent = "Web Transitions and Animations in CSS and JavaScript";
-var contentPanelMessage = "CSS Tranlations";
-$(document).ready(function () {
-    $("#MainTitle").text(titleMessageContent);
-    $("#ContentPanelTranslations").text(contentPanelMessage);
+$(function () {
+    $("#slideDownDiv").on("click", function () {
+        $("#slideDownDiv").toggleClass("animate-div-el-reverse");
+    });
+    $("#animBorderDiv").on("click", function () {
+        $("#animBorderDiv").toggleClass("animate-border-el-reverse");
+    });
 });

@@ -3,9 +3,22 @@
     to {height: 100%;}
 }
 
+@keyframes animateDivReverse {
+    from {heigh: 100%;}
+    to {height: auto;}
+}
+
 .animate-div-el {
     height: 0%;
     animation-name: animateDiv;
+    animation-duration: 1.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.animate-div-el-reverse {
+    height: 100%;
+    animation-name: animateDivReverse;
     animation-duration: 1.25s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

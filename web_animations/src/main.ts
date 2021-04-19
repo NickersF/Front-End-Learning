@@ -1,5 +1,10 @@
-let titleMessageContent = "Tranformations, Transitions, and Animations in CSS and JavaScript";
+$(function() {
 
-$(document).ready(function() {
-    $("#MainTitle").text(titleMessageContent);
+    $("#slideDownDiv").on("click", function() {
+        $("#slideDownDiv").toggleClass("animate-div-el-reverse");
+    });
+
+    $("#animBorderDiv").on("click", function() {
+        $("#animBorderDiv").toggleClass("animate-border-el-reverse");
+    });
 });
