@@ -245,4 +245,18 @@ body {
   animation-fill-mode: forwards;
 }
 
+@keyframes animateRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.rotate-div {
+  animation: animateRotate 2s linear infinite;
+  width: 256px;
+  height: 256px;
+}
+
 /*# sourceMappingURL=styles.css.map */
