@@ -9,5 +9,8 @@ $(function() {
         $("#animBorderDiv").toggleClass("animate-border-el-reverse");
     });
 
-    
+    // For animate position.html
+    $("#PositionableDiv").on("click", function(){
+        $("#PositionableDiv").removeClass("positional-div-static").addClass("positional-div-animation");
+    });
 });
